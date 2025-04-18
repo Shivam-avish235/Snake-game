@@ -1,6 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "wall.h"
+#include "snake.h"
 #include <SDL3/SDL.h>
 
 class Game {
@@ -17,9 +19,14 @@ public:
 
 private:
     bool running;
+    int windowWidth, windowHeight;
+    int blockSize;
+
     SDL_Window* window;
     SDL_Renderer* renderer;
-    int windowWidth, windowHeight;
+
+    Snake snake;
+    Wall wall;
 };
 
 #endif

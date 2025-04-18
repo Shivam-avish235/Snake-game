@@ -1,2 +1,2 @@
 all:
-	g++ src/*.cpp -Iinclude -lSDL3 -o snake_game && ./snake_game
+	g++ src/main.cpp src/game.cpp src/snake.cpp src/food.cpp src/wall.cpp -Iinclude -lSDL3 -o main

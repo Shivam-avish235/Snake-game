@@ -15,6 +15,7 @@ public:
     void render(SDL_Renderer* renderer);
     void changeDirection(SDL_Keycode key);
     void grow();
+    SDL_FRect getHead() const;
     const std::vector<SnakeSegment>& getSegments() const;
 
 private:
